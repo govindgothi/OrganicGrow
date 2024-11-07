@@ -4,6 +4,7 @@ import logo1 from "../../assets/logo1.png";
 import fistlogo from "../../assets/fistlogo.jpg";
 import { BsCartFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import { SignUpForm } from "../RegistrationForm/SignUpForm";
 const Header = () => {
     const [login , setLogin]=useState(true)
   return (
@@ -16,7 +17,9 @@ const Header = () => {
           <li>Home</li>
           <li>About</li>
           <li>Services</li>
-          <li>Contact</li>
+          <li>Contact
+            <SignUpForm></SignUpForm>
+          </li>
         </ul>
       </nav>
       <div className={styles.InputBox}><input type="text" placeholder="search"/></div>
