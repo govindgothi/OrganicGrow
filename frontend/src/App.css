@@ -6,3 +6,7 @@
 body {
   user-select: none; /* Prevent caret from appearing on page elements */
 }
+.link{
+  text-decoration: none;
+  color: inherit;
+}

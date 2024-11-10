@@ -8,9 +8,8 @@ const ShowReview = () => {
     <div className={styles.ShowReviewBox}>
       <h3 className={styles.ProductRating}>
         <p className={styles.Star}>
-          <span>
-            4<IoMdStar className={styles.StarIcon} />
-          </span>
+          <IoMdStar className={styles.StarIcon} />
+          <span> 4</span>
         </p>
         <p className={styles.review}> very nice</p>
       </h3>

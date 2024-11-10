@@ -1,12 +1,15 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './SignUpForm.module.css'; // Import the external CSS file
 import { Link } from 'react-router-dom';
-
-const SignUpForm = () => {
-  
-  return (<>
-    <div className={styles.SignUp_Container}>
-      <form action="" className={styles.Form}>
+import { createPortal } from 'react-dom';
+const SignUpForm = ({openSignUp,handleClose}) => {
+   if(!openSignUp){
+    console.log("hello")
+    return null
+   }
+  return createPortal(
+    <div  onClick={handleClose} className={`${styles.SignUp_Container}`}>
+      <form action="" className={`${styles.Form} `}  onClick={(e) => e.stopPropagation()}>
          <h2 className={`${styles.Heading}`}>Create Account</h2>
         <div className={`${styles.Username} ${styles.InputDiv}`}>
           <label htmlFor="" className={styles.Label}>username </label><br />
@@ -37,25 +40,14 @@ const SignUpForm = () => {
           className={styles.Input_Container} />
           <p className={styles.error}>hello errors</p>
         </div>
-          
 
-        {/* <div className={`${styles.Contact} ${styles.InputDiv}`}>
-          <label htmlFor="" className={styles.Label}>contact</label><br />
-          <input type="text" 
-          name=''
-           placeholder='username'
-          onChange={""}
-          className={styles.Input_Container} />
-          <p className={styles.error}>hello errors</p>
-        </div> */}
-          
          <div className={`${styles.SubmitArea} ${styles.InputDiv}`}>
           <h3>If you are already register? <span ><Link to='/LoginForm' style={{color:"#1c4e0f", }}>Login</Link></span></h3>
-          <button className={styles.button}>SignUp</button>
+          <button className={styles.button} onClick={handleClose} >SignUp</button>
          </div>
       </form>
-    </div>
-  </>);
+    </div>,
+  document.getElementById('portal'));
 };
 
 export { SignUpForm};

@@ -7,11 +7,12 @@ const addProduct = async(req,res)=>{
             return res.json("product detail is require")
         }
         const product = await Product.create({
-            productName,
-            productCategory,
+            productUser,
+            ProductName,
             productPrice,
-            productImage,
-            productDetail,
+            ProductThumbNailImaige,
+            quantity,
+            ProductStock,
         })
         if(!product){
             return res.json("something is wrong in adding product")

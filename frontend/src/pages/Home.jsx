@@ -1,24 +1,18 @@
-import React from 'react'
-import { Header } from '../components/Header/Header'
-import { Footer } from '../components/Footer/Footer'
-import { SignUpForm } from '../components/RegistrationForm/SignUpForm'
-import { LoginForm } from '../components/RegistrationForm/LoginForm'
-import { ProductItem } from '../components/ProductItem/ProductItem'
-import ProductItemSingalPage from '../components/ProductItem/ProductItemSingalPage'
-import { DisplaySingleProduct } from '../../Products/DisplaySingleProduct'
+import React from "react";
+import { Header } from "../components/Header/Header";
+import { Footer } from "../components/Footer/Footer";
+import { Categories } from "../components/Header/Categories.jsx";
+import Contact from "../components/Header/Contact.jsx";
 
 const Home = () => {
   return (
     <div>
       <Header></Header>
-      {/* <SignUpForm></SignUpForm> */} 
-      {/* <LoginForm></LoginForm> */}
-      {/* <ProductItem></ProductItem> */}
-      {/* <ProductItemSingalPage></ProductItemSingalPage> */}
-      {/* <DisplaySingleProduct></DisplaySingleProduct> */}
+      <Categories></Categories>
+      <Contact></Contact>
       <Footer></Footer>
     </div>
-  )
-}
+  );
+};
 
-export {Home}
+export { Home };
