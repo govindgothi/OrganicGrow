@@ -2,6 +2,8 @@ import { User } from "../models/user.models.js";
 import { Review } from "../models/review.model.js";
 import { Product } from "../models/product.models.js";
 
+// something is mistake in use of populate between route data modeling schema which thing need to be add
+
 const addReview = async (req, res) => {
   try {
     const { product, user, rating, comment } = req.body;
