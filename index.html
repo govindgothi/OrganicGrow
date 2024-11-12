@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popup with Background Overlay</title>
+  <style>
+    /* Basic styling for the popup and overlay */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      visibility: hidden;
+      z-index: 100; /* Layer it behind the popup */
+    }
+
+    /* Style for showing the overlay */
+    .overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    /* Popup styling */
+    .popup {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      padding: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      z-index: 101; /* Make sure it appears above the overlay */
+    }
+
+    /* Button to trigger popup */
+    .open-popup-btn {
+      margin: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <button class="open-popup-btn" onclick="openPopup()">Open Popup</button>
+
+  <!-- Overlay -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- Popup -->
+  <div class="popup" id="popup">
+    <p>This is a popup message!</p>
+    <button onclick="closePopup()">Close</button>
+  </div>
+
+  <script>
+    const overlay = document.getElementById('overlay');
+    const popup = document.getElementById('popup');
+
+    function openPopup() {
+      overlay.classList.add('active');
+      popup.style.display = 'block';
+    }
+
+    function closePopup() {
+      overlay.classList.remove('active');
+      popup.style.display = 'none';
+    }
+  </script>
+
+</body>
+</html>

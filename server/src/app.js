@@ -16,8 +16,9 @@ app.use(express.static("public"))
 
 import productsRouter from "./routes/product.routes.js"
 import usersRouter from "./routes/users.routes.js" 
+import reviewRouter from "./routes/review.routes.js"
 
 app.use("/api/v1/product", productsRouter)
 app.use("/api/v1/users",usersRouter)
-
+app.use("/api/v1/review",reviewRouter)
 export { app }

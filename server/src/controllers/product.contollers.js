@@ -1,17 +1,20 @@
 import { Product } from "../models/product.models.js";
+import { User } from "../models/user.models.js";
 
 const addProduct = async(req,res)=>{
     try{
-        const {productName,productCategory,productPrice,productImage,productDetail} =req.body
-        if(!productName || !productCategory || !productPrice || !productImage || !productDetail){
+        const {productUser, productName,productCategory,productPrice, productDiscountedPrice, productThumbNailImage, productDetail, ProductStock,} =req.body
+        if(!productUser  || !productName || !productCategory || !productPrice || !productDiscountedPrice || !productThumbNailImage || !productDetail || !ProductStock){
             return res.json("product detail is require")
         }
         const product = await Product.create({
             productUser,
-            ProductName,
+            productName,
+            productCategory,
             productPrice,
-            ProductThumbNailImaige,
-            quantity,
+            productDiscountedPrice,
+            productThumbNailImage,
+            productDetail,
             ProductStock,
         })
         if(!product){
@@ -25,9 +28,9 @@ const addProduct = async(req,res)=>{
 }
 const ShowProduct = async(req,res)=>{
     try{
-        const {productCategory}=req.body
+        // const {productCategory}=req.body
         //console.log(productCategory)
-        const product = await Product.find({productCategory})
+        const product = await Product.find({ productUser: "672ce8d7948c587fdbd7978b"}).populate()
         if(!product){
             return res.json("product is not find")
         }

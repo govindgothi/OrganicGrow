@@ -22,6 +22,12 @@ const productSchema = new Schema({
     min: 0,
     trim: true,
   },
+  productDiscountedPrice: {
+    type: Number,
+    required: true,
+    min: 0,
+    trim: true,
+  },
 
   productThumbNailImage:{
       type: String,

@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.OfferHeadBox{
+    max-width: 90rem;
+    background-color: aqua;
+    height: 45px;
+    background-color: rgb(36, 103, 62);
+}
+.OfferHeadBox  ul{
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    /* align-items: center; Lora Bold*/
+    font-family:  Lora Bold;
+    font-size: 12px;
+    padding-top: 15px;
+    color: white;
+}
+/* ================================================================================================ */
+.HeaderBox{
+    background-color: #F8C027;
+     max-width: 90rem;
+     height: 120px;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     gap: 15rem;
+}
+.Logo{
+    width: 15rem;
+    height: 90%;
+}
+.MenuDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+.HambergMenu{
+    cursor: pointer;
+    font-size: 25px;
+    width: 12%;
+}
+.userName{
+    border: 2px solid rgb(243, 217, 102);
+    padding: 3px 7px ;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px grey;
+    cursor: pointer;
+}
+.userName:hover{
+    scale: 1.1;
+}
+.ShoppingCartDiv{
+    font-size: 20px;
+    cursor: pointer;
+}
+.SearchIconDiv{
+    font-size: 22px;
+    padding-top: 2px;
+    cursor: pointer;
+}

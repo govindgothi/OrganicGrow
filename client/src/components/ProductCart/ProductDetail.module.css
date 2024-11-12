@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+.ProductDetailBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 90rem;
+    padding: 15px;
+    height: 600px;
+}
+
+.ProductImageArea{
+  width: 50%;
+  height: 600px;
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ImageDiv{
+  width: 90%;
+  height: 99%;
+  /* margin: auto; */
+  border-radius: 10px;
+}
+.ImageDiv >img{
+  border-radius: 10px;
+}
+.ProductDetailArea{
+    width: 50%;
+    height: 600px;
+    /* border: 2px solid red; */
+}
+.CompanyName{
+  color: #494949dc;
+  padding: 10px 0px 10px 0;
+  font-size: 20px;
+}
+.ProductName{
+  font-size: 40px ;
+  /* font-weight: 800; */
+  padding: 10px 0px 10px 0;
+  font-family: "Merriweather Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+.stockCheck{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: green;
+  font-size: 20px;
+  padding: 15px 0px 15px 0px;
+}
+
+.Price{
+  font-weight: 500;
+  font-size: 22px;
+  padding: 15px 0px 15px 0px;
+}
+.ReviewCount{
+  padding: 15px 0px 15px 0px;
+  font-size: 20px;
+}
+.Rating{
+  padding: 15px 0px 15px 0px;
+  font-size: 20px;
+}
+.greyLine{
+  border: 1px solid grey;
+  margin: 20px 0px 15px 0px;
+}
+.wieghtButtonBox{
+  display: flex; 
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+.CartButton{
+  background: #457F5C;
+  padding: 15px 0px 15px 0px;
+  text-align: center;
+  border-radius: 30px;
+  margin-top: 30px;
+  font-size: 22px;
+}
+.Description{
+  margin-top: 25px;
+  font-size: 18px;
+  word-spacing: 4px;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}

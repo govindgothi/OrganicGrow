@@ -1,0 +1,55 @@
+*{
+  padding: 0;
+  margin: 0;
+  /* font-family:    Oxygen, Ubuntu,  'Open Sans',  sans-serif; */
+}
+.custom-link{
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  max-width: 90rem;
+  user-select: none; /* Prevent caret from appearing on page elements */
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  z-index: 100; /* Layer it behind the popup */
+}
+.MenuBox{
+  width: 24rem;
+  height: 90vh;
+  opacity: 1;
+  background-color: white;
+  border-radius: 13px;
+  position: fixed;
+  left: 1%;
+  top: 50px;
+   right: 90px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+   z-index: 101;
+}
+.overlay,
+  .MenuDiv {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+
+.HomePageBox{
+  max-width: 90rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 33px 3px 10px 3px;
+  flex-wrap: wrap;
+}
+.CowImageDiv{
+  width: 100%;
+  height: 80vh;
+  margin-top: 50px;
+}
