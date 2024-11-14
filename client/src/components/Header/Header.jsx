@@ -16,22 +16,24 @@ const Header = () => {
     const [input,setInput] = useState(true)
     const [isOpen,setIsOpen]=useState(false)
     const [loginOpen, setLoginOpen]=useState(false)
-    const overlay = document.getElementById('overlay');
+    // const overlay = document.getElementById('overlay');
     const handleOpen = () =>{
         if(isOpen===true){
+          
           setIsOpen(false)
-          overlay.classList.add('active');
-          popup.style.display = 'block';
+          
         }
         if(isOpen===false){
           setIsOpen(true)
         }
     }
+  
+
     const handleLogin = ()=>{
         if(loginOpen===true){
             setLoginOpen(false)
-            // overlay.classList.add('active');
-            // popup.style.display = 'block';
+           
+            
           }
           if(loginOpen===false){
             setLoginOpen(true)
@@ -49,6 +51,7 @@ const Header = () => {
         </div>
     </header>
     {isOpen && <div className="overlay" ></div>}
+    {loginOpen && <div className="overlay" ></div>}
     <Menu isOpen={isOpen} setIsOpen={setIsOpen} />
     <LoginForm loginOpen={loginOpen} setLoginOpen={setLoginOpen}/>
     </> )

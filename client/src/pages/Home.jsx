@@ -8,6 +8,7 @@ import Footer from '../components/Footer/Footer.jsx'
 
 const Home = () => {
   return (
+    
     <div>
       <OfferHead></OfferHead>
       <Header></Header>

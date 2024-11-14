@@ -1,0 +1,46 @@
+.CartProductDiv{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: aqua; */
+}
+.productNameImage{
+    width: 40%;
+    display: flex;
+    /* background-color: antiquewhite; */
+    /* height: inherit; */
+    gap: 10px;
+}
+.ImageDiv{
+    /* width: ; */
+    height: 100px;
+    border-radius: 5px;
+}
+.ImageDiv img{
+    /* width: 100%; */
+    height: 100%;
+    border-radius: 5px;
+}
+.NameDiv *{
+    margin-bottom: 10px;
+    /* background-color: blueviolet; */
+    
+}
+.QuantityBox{
+  /* background-color: rgb(184, 127, 127); */
+  width: 200px;
+  /* height: 200px; */
+  font-size: 20px;
+  padding: 3px 0px 3px 0px;
+  /* text-align: center; */
+}
+.PriceBox{
+/* background-color: brown  ; */
+width: 200px;
+font-size: 20px;
+padding: 3px 0px 3px 0px;
+text-align: end;
+  /* height: 200px; */
+}

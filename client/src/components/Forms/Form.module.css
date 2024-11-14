@@ -1,17 +1,99 @@
 .LoginFormBox{
-    background-color: white;
-    width: 30rem;
-    position: fixed;
-    right: 1%;
-    top: 200px;
-     right: 1%;
-     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-     z-index: 101;
-     position: absolute;
+   width: 28rem;
+   background-color: white;
+   height: 80vh;
+   position: absolute;
+   top: 70px;
+   /* right: 50%; */
+   left: 50%;
+   border-radius: 10px;
+   opacity: 1;
+   z-index: 101;
 }
 .ImageDiv{
-   width: 50%;
-   /* padding: 3px 10px 3 10px; */
-   left: 50%;
-   top: 50%;
+   text-align: center;
+   /* position: absolute; */
+   width: 100%;
+   /* background-color: brown; */
+   height: 25%;
+}
+.Image{
+   width: 10rem;
+   /* padding: 10px 0px 10px 30%; */
+   position: relative;
+   top: 20px;
+   right: 1rem;
+   /* background-color: aquamarine; */
+   border-radius: 5px;
+}
+.LoginWordBox{
+   /* background-color: aqua; */
+   padding:7px 0px 10px 30px ;
+}
+.LoginWordBox *{
+  margin-top: 10px;
+}
+.LoginWordBox :nth-child(1){
+  font-size: 29px;
+}
+.LoginWordBox :nth-child(2){
+   font-size: 20px
+}
+.InputDiv{
+  margin-top: 20px;
+}
+.EmailBox{
+  width: 23rem;
+  padding: 5px 15px 5px  7%;
+  height: 30px;
+  border-radius: 5px;
+}
+.PasswordBox{
+   width: 23rem;
+   padding: 5px 15px 5px 7%;
+   height: 30px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.InputDiv input{
+   width: 100%;
+   height: 100%;
+   border-radius: 5px;
+   border: 2px solid grey;
+   padding-left: 7px;
+   font-size: 18px;
+}
+.InputDiv input:active{
+  outline: none;
+  text-decoration: none;
+}
+.InputDiv input:focus{
+   outline: none;
+   text-decoration: none;
+}
+.InputDiv input::placeholder{
+  color: black;
+  opacity: 1.1;
+  z-index: 101;
+}
+.InputDiv button{
+   width: 24rem;
+   margin: 25px 15px 5px  7%;
+   height: 40px;
+   font-size: 22px;
+   color: white;
+   background-color: rgb(52, 141, 52);
+   border-radius: 10px;
+}
+.SignInButton{
+ text-align: center;
+ margin-top: 10px;
+ font-size: 25px;
+ text-decoration: underline rgb(63, 63, 218);
+ color: rgb(63, 63, 218);
+}
+.err{
+   padding: 3px 0px 0px  4px;
+   color: red;
+   display: none;
 }

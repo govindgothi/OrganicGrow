@@ -1,0 +1,38 @@
+.CommentCardBox{
+   width: 100%;
+   /* background-color: rgb(15, 156, 109); */
+   /* margin-top: 200px; */
+   margin-bottom: 45px;
+}
+.YellowCommentLine{
+   width: 90%;
+   border-bottom: 2px solid yellow;
+   margin-left: 5%;
+}
+.RatingDateDiv{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 3px 5% 3px 5%;
+}
+.UserDetail{
+   display: flex;
+   align-items: flex-start;
+   gap: 4px;
+   padding: 3px 5% 3px 5%;
+   margin-top: 13px;
+}
+.UserDetail p{
+  font-size: 22px;
+  padding: 4px 0px 3px 1px;
+}
+.Icon{
+   font-size: 38px;
+   color: rgb(245, 162, 54);
+   background-color: rgb(233, 232, 232);
+   padding: 4px; 
+}
+.UserComment{
+   padding: 13px 5% 3px 5%;
+   font-size: 20px;
+}

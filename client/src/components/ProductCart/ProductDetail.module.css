@@ -5,11 +5,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 .ProductDetailBox{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     max-width: 90rem;
     padding: 15px;
-    height: 600px;
+    height: 800px;
 }
 
 .ProductImageArea{
@@ -93,7 +93,8 @@
   font-size: 18px;
   word-spacing: 4px;
   font-family: "Nunito", sans-serif;
-  font-optical-sizing: auto;
+  /* font-optical-sizing: auto; */
   font-weight: 400;
   font-style: normal;
+  /* display: block; */
 }

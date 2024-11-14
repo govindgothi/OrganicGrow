@@ -1,3 +1,9 @@
+/* 
+CSS START FROM WHICH LINE
+1). Cart.jsx => line 63 
+
+*/
+
 *{
   padding: 0;
   margin: 0;
@@ -10,6 +16,7 @@
 body {
   max-width: 90rem;
   user-select: none; /* Prevent caret from appearing on page elements */
+  
 }
 .overlay {
   position: fixed;
@@ -52,4 +59,110 @@ body {
   width: 100%;
   height: 80vh;
   margin-top: 50px;
+}
+/* ================================================================================================ */
+/* ========== Start Page/Cart.jsx ========================================================= */
+
+.HeadingCartName{
+  text-align: center;
+  font-size: 3.5rem;
+  margin: 2.5rem;
+}
+.LineBlack{
+  border-bottom: 2px solid black;
+  width: 89%;
+  margin-left: 5.5%;
+}
+.Container{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  /* height: 250px; */
+  /* background-color: rgb(101, 216, 216); */
+  margin-top: 20px;
+  gap: 2rem;
+}
+.ProductDisplay{
+  width: 60%;
+  height: 100%;
+  padding-top: 30px;
+}
+.ProductDisplayHeading{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ProductDisplayHeadingLineGrey{
+  border-bottom: 1px solid rgb(197, 195, 195);
+  margin-top: 1.5rem;
+}
+.CheckoutBox{
+  border: 1px solid rgb(199, 196, 196);
+  width: 25%;
+  /* height: 80%; */
+  border-radius: 10px;
+  padding-top: 1rem;
+}
+.priceContainer{
+  margin-top: 10px;
+  width: 85%;
+  margin-left: 7.5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.subtotal{
+  color: grey;
+}
+.CheckoutBox button{
+  width: 85%;
+  margin-left: 7.5%;
+  background-color: rgb(40, 94, 40);
+  font-size: 18px;
+  padding: 10px 0px 10px 0px;
+  margin-top: 3.1rem;
+  margin-bottom: 3.1rem;
+  border-radius: 20px;
+  color: white;
+}
+
+.productShow{
+  overflow-y: scroll;
+  height: 500px;
+}
+/* 
+======================End of Cart.jsx Page =============================================================
+*/
+/* 
+======================Page/About.jsx=================================================================== 
+*/
+.AboutBox{
+  /* max-width: 90rem; */
+  height: 110rem;
+  position: relative;
+}
+.AboutHeading{
+  padding: 3px 0px 3px 0px;
+  position: relative;
+  top: 20px;
+  left: 45%;
+  width: 9rem;
+  color: black;
+  background-color: aqua;
+}
+.myImageDiv{
+  margin-top:40px;
+  position: relative;
+  max-width: 250px;
+  height: 350px;
+  top: 40px;
+  left: 38%;
+  background-color: yellow;
+  object-fit: cover;
+}
+.myImageDiv img{
+  width: 100%;
+  height: 100%;
 }

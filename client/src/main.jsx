@@ -8,6 +8,8 @@ import { store } from './store/store.js'
 import Home from './pages/Home.jsx'
 import Cart from './pages/Cart.jsx' 
 import ProductFeature from './pages/ProductFeature.jsx'
+import About from './pages/About.jsx'
+import UserDetail from './pages/UserDetail.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -16,6 +18,8 @@ const router = createBrowserRouter(
       <Route path='Home' element={<Home />} />
       <Route path='ProductFeature' element={<ProductFeature />} />    
       <Route path='Cart' element={<Cart />} />
+      <Route path='About' element={<About />} />
+      <Route path='UserDetail' element={<UserDetail />} />
     </Route>
   )
 )
