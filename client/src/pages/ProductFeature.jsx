@@ -6,8 +6,7 @@ import CommentCard from '../components/CommentCards/CommentCard'
 import Footer from '../components/Footer/Footer'
 
 const ProductFeature = () => {
-  return (
-   <>
+  return (<> 
      <OfferHead></OfferHead>
      <Header></Header>
      <ProductDetail></ProductDetail>

@@ -1,14 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from "./Form.module.css"
 import LogoVarradhiFarm from "../../assets/LogoVarradhiFarm.png"
 import { createPortal } from 'react-dom'
 import { Link } from 'react-router-dom'
+import SignInForm from './SignInForm'
+import { RxCross1 } from "react-icons/rx";
+// import { setIsSignOpen } from '../Header/Header'
 const LoginForm = ({setLoginOpen , loginOpen}) => {
+  // const [isSignOpen,setIsSignOpen] = useState(false)
   // document.body.style.overflow = "";
   if(!loginOpen) return null
   // document.body.style.overflow = "hidden";
-  return createPortal(
+  const handleopen =(e)=>{
+    // setIsSignOpen(true)
+    setLoginOpen(false)
+   
+  }
+
+  return createPortal(<>
     <div className={styles.LoginFormBox}>
+    <div onClick={()=>setLoginOpen(false)} className={styles.CloseButton} ><RxCross1 /></div>
       <div className={styles.ImageDiv}><img src={LogoVarradhiFarm} alt="" className={styles.Image} /></div>
       <div className={styles.LoginWordBox}>
         <h3>Login</h3>
@@ -23,10 +34,11 @@ const LoginForm = ({setLoginOpen , loginOpen}) => {
           <input type="text" placeholder=" password" className={styles.PasswordInput}/>
           <p className={styles.err}>Error</p>
         </div>
-        <button>Login</button>
-        <Link><h3 className={styles.SignInButton} onClick={()=>setLoginOpen(false)}>signIn</h3></Link>
+        <Link to='/Home' className='custom-link'> <button onClick={()=>setLoginOpen(false)}>Login</button></Link>
+        <Link to='/SignIn'><h3 className={styles.SignInButton}  onClick={()=>setLoginOpen(false)}>signIn</h3></Link>
       </div>
-    </div>,
+    </div>
+     </> ,
     document.getElementById('login')
   )
 }

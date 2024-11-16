@@ -10,6 +10,8 @@ import Cart from './pages/Cart.jsx'
 import ProductFeature from './pages/ProductFeature.jsx'
 import About from './pages/About.jsx'
 import UserDetail from './pages/UserDetail.jsx'
+import Contact from './pages/Contact.jsx'
+import SignIn from './pages/SignIn.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -19,7 +21,12 @@ const router = createBrowserRouter(
       <Route path='ProductFeature' element={<ProductFeature />} />    
       <Route path='Cart' element={<Cart />} />
       <Route path='About' element={<About />} />
-      <Route path='UserDetail' element={<UserDetail />} />
+      <Route path='Contact' element={<Contact />} />
+      <Route path='SignIn' element={<SignIn />} />
+      <Route path='UserDetail' element={<UserDetail />} >
+       <Route path='UserDetail' element={<UserDetail />} />
+       <Route path='UserDetail' element={<UserDetail />} />
+      </Route>
     </Route>
   )
 )

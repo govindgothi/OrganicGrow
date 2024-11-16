@@ -4,6 +4,7 @@
     /* border: 2px solid black; */
     border-radius: 7px;
     /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); */
+    margin-bottom: 30px;
 }
 .ShowProductCardBox:hover{
     scale: 1.02;
@@ -16,7 +17,8 @@
     border-radius: 7px 7px 0px 0px ;
 }
 .DetailDiv > *{
-   padding: 3px 4px 3px 8px;
+   padding: 2px 4px 3px 8px;
+   text-align: center;
 }
 .FrontDisplayProductBox{
     width: 100%;

@@ -1,14 +1,28 @@
 .LoginFormBox{
    width: 28rem;
    background-color: white;
-   height: 80vh;
+   /* height: 80vh; */
    position: absolute;
-   top: 70px;
+   top: 90px;
    /* right: 50%; */
-   left: 50%;
+   /* left: 30%; */
+   right: 30%;
    border-radius: 10px;
    opacity: 1;
    z-index: 101;
+   padding-bottom: 30px;   
+}
+.CloseButton{
+   margin: 6px 0px 0px 10px;
+   width: 17px;
+   height: 16px;
+   padding: 6px;
+   border: 1px solid grey;
+   border-radius: 50%;
+   transition: transform 0.2s ease; 
+}
+.CloseButton:hover{
+   transform: rotate(45deg)
 }
 .ImageDiv{
    text-align: center;

@@ -1,9 +1,24 @@
 import React from 'react'
 import { createPortal } from 'react-dom'
 import styles from "./Form.module.css"
-const SignInForm = () => {
-  return createPortal(
-    <div className={styles.LoginFormBox}>
+// import styles from "./Form.module.css"
+import LogoVarradhiFarm from "../../assets/LogoVarradhiFarm.png"
+// import { createPortal } from 'react-dom'
+import { Link } from 'react-router-dom'
+import { RxCross1 } from "react-icons/rx";
+
+const SignInForm = ({top,right}) => {
+  // if(!isSignOpen) return null
+  return (
+    <div className={`${styles.LoginFormBox}`}  style={{
+      position: 'absolute',
+      top: top,
+      left: right,
+      boxShadow:"0px 0px 12px grey",
+      // backgroundColor: 'orange',
+      // color: 'white',
+    }}>
+      <Link to='/'> <div className={styles.CloseButton} ><RxCross1 /></div></Link>
       <div className={styles.ImageDiv}><img src={LogoVarradhiFarm} alt="" className={styles.Image} /></div>
       <div className={styles.LoginWordBox}>
         <h3>Login</h3>
@@ -22,11 +37,10 @@ const SignInForm = () => {
           <input type="text" placeholder=" password" className={styles.PasswordInput}/>
           <p className={styles.err}>Error</p>
         </div>
-        <button>SignIn</button>
-        <Link><h3 className={styles.SignInButton} onClick={()=>setLoginOpen(false)}>Login</h3></Link>
+        <button>signIn</button>
+        {/* <Link><h3 className={styles.SignInButton} >Login</h3></Link> */}
       </div>
-    </div>,
-    document.getElementById('login')
+    </div>
   )
 }
 
