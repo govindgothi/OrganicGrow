@@ -6,20 +6,28 @@ import { Product } from "../models/product.models.js";
 
 const addReview = async (req, res) => {
   try {
-    const { product, user, rating, comment } = req.body;
-      if( !product || !user || !rating || !comment ){
+    const {productId, userId, rating, comment } = req.body;
+      if( !productId || !userId || !rating || !comment ){
         return res.json("err")
       }
     const review = await Review.create({
-      product,
-      user,
+      productId,
+      userId,
       rating,
       comment,
     });
     if(!review){
-        return res.json("something is wrong in adding review")
+        return res.json("something is wrong in creating review")
     }
-    return res.json(review)
+    const addreview = await Product.findByIdAndUpdate(
+      productId,
+      { $push: { reviews: review._id } },
+      { new: true }
+    );
+    if(!addreview){
+      return res.json("something is wrong in adding review")
+  }
+    return res.json(addreview)
 
   } catch {
     return res.json("revier err")

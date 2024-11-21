@@ -41,7 +41,13 @@ const userSchema = new Schema(
       type: String,
       enum: ["Male", "Female", "Other"],
       // default: 'Other',
-    }
+    },
+    ourProduct:[
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Product",
+      }
+    ]
 },
   {
     timestamps: true,
