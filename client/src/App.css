@@ -45,15 +45,53 @@ body {
     opacity: 1;
     transition: opacity 0.3s ease;
   }
-
+  .Loved-product-div{
+    margin-top: 20px;
+    padding: 30px 35px 10px 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .Loved-product-heading{
+    font-size: 37px;
+    font-weight: 900;
+  }
+  .View-product-box{
+    display: flex;
+    width: 7rem;
+    /* background-color: #FF914D; */
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+  .View-text{
+    font-size: 18px;
+  }
+  .View-icon{
+    font-size: 20px;
+    border-radius: 15px;
+    padding: 4px;
+    color: black;
+    background-color: rgb(211, 206, 206);
+  }
+  .View-icon:hover{
+    background: #000;
+    color: white;
+    animation-delay: 1s;
+  }
 .HomePageBox{
   max-width: 90rem;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  padding: 33px 3px 10px 3px;
+  padding: 20px 3px 10px 3px;
   flex-wrap: wrap;
+}
+.info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .CowImageDiv{
   width: 100%;
@@ -69,9 +107,11 @@ body {
   margin: 2.5rem;
 }
 .LineBlack{
-  border-bottom: 2px solid black;
+  border-top: 2px solid black;
   width: 89%;
   margin-left: 5.5%;
+  /* margin-bottom: 20px;
+  padding-bottom: 30px; */
 }
 .Container{
   display: flex;
@@ -93,6 +133,18 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+.ProductDisplayHeading .product{
+  width: 40%;
+}
+.ProductDisplayHeading .quantity{
+  width: 100px;
+}
+.ProductDisplayHeading .price{
+  width: 200px;
+  text-align: center;
+  padding: 3px 0px 3px 0px;
+}
+
 .ProductDisplayHeadingLineGrey{
   border-bottom: 1px solid rgb(197, 195, 195);
   margin-top: 1.5rem;

@@ -33,17 +33,26 @@ const addProduct = async(req,res)=>{
         return res.json("something is missing via adding product deatil")
     }
 }
+const ProductShowById = async(req,res)=>{
+//   const {id} = req.body
+   const {id} = req.params
+   console.log(id)
+  const product = await Product.findById(id)
+  return res.json(product)
+//   
+}
 const ShowProduct = async(req,res)=>{
     try{
         // const {productCategory}=req.body
         //console.log(productCategory)672ce8d7948c587fdbd7978b
        
-        const products = await User.findById("672ce8d7948c587fdbd7978b").populate({
-            path: "ourProduct", // The field in the Product model referencing User
-            populate:{
-                  path:"reviews"
-            } // The Product model
-          });
+        // const products = await User.findById("672ce8d7948c587fdbd7978b").populate({
+        //     path: "ourProduct", // The field in the Product model referencing User
+        //     populate:{
+        //           path:"reviews"
+        //     } // The Product model
+        //   });
+        const products = await Product.find({})
         
         console.log(products)
         if(!products){
@@ -86,4 +95,4 @@ const updateProduct = async(req,res)=>{
     }
 }
 
-export {addProduct,ShowProduct,deletProduct,updateProduct}
+export {addProduct,ShowProduct,deletProduct,updateProduct,ProductShowById }

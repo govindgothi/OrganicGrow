@@ -22,7 +22,7 @@ const Menu = ({isOpen, setIsOpen}) => {
         <h3 >FAQ</h3>
         <Link to='/Contact' className='custom-link'><h3 >Contact</h3></Link>
         <Link className='custom-link' to='/About'><h3 >About Us</h3></Link>
-        <Link className='custom-link' to='/UserDetail'><h3 >Your Account</h3></Link>
+        <Link className='custom-link' to='/User'><h3 >Your Account</h3></Link>
       </div>
       <div>
       

@@ -29,7 +29,7 @@ const UserAccount = () => {
               <h2 className={styles.WalletOrderIcon}>
                 <PiWalletFill />
               </h2>
-              <h2 className={styles.Order}><Link to='ManageAddress' className="custom-link">MY ORDERS</Link></h2>
+              <h2 className={styles.Order}><Link to='/User/UserDetail' className="custom-link">MY ORDERS</Link></h2>
               <h3 className={styles.RightArrow}>
                 <FaChevronRight />
               </h3>
@@ -39,7 +39,7 @@ const UserAccount = () => {
                 <CgProfile />
               </h2>
               <div className={styles.AccountFunction}>
-                <h2 className={styles.HeadAccount}><Link className="custom-link" to='ManageAddress'>ACOOUNT SETTING</Link></h2>
+                <h2 className={styles.HeadAccount}><Link className="custom-link" to='/User/ManageAddress'>ACOOUNT SETTING</Link></h2>
                 <h3 className={styles.MenuAccount}>Profile Information</h3>
                 <h3 className={styles.MenuAccount}>Manage Adresses</h3>
                 <h3 className={styles.MenuAccount}>PAN Card Information</h3>
